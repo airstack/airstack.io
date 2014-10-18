@@ -7,7 +7,7 @@ $(function(){
     idx++;
     $controls.find('li:nth-child('+idx+')').click();
     if (idx === length) idx = 0;
-  }, 3000);
+  }, 5000);
   $controls.find('li').on('click', function(evt){
     if (evt.originalEvent instanceof MouseEvent)
       clearInterval(interval);
