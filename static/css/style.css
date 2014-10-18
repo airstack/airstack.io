@@ -1684,7 +1684,11 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   filter: alpha(opacity=100);
 }
 .brand .airstack {
-  font-size: 40px;
-  top: -15px;
   color: #FFFFFF;
+}
+@media (min-width: 480px) {
+  .brand .airstack {
+    font-size: 40px;
+    top: -15px;
+  }
 }
