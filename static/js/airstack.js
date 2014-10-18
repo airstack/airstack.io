@@ -8,8 +8,10 @@ $(function(){
     $controls.find('li:nth-child('+idx+')').click();
     if (idx === length) idx = 0;
   }, 5000);
-  $controls.find('li').on('click', function(evt){
+  var onClick = function(evt) {
     if (evt.originalEvent instanceof MouseEvent)
       clearInterval(interval);
-  });
+  };
+  $controls.find('li').on('click', onClick);
+  $('.header-17-sub .page-transitions').on('click', onClick);
 });
