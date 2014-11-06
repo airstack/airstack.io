@@ -8,7 +8,7 @@
 # Dev
 lessc static/less/style.less > static/css/style.css
 
-# Prodution
+# Production
 lessc --clean-css static/less/style.less > static/css/style.min.css
 ```
 
